@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ControllerLoginRegistrazione">
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="14.0" prefHeight="76.0" prefWidth="206.0"
+           text="Register">
+        <font>
+            <Font name="Arial" size="40.0"/>
+        </font>
+    </Label>
+    <Label layoutX="98.0" layoutY="101.0" text="Nome">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="nomeReg" layoutX="194.0" layoutY="98.0" prefHeight="33.0" prefWidth="375.0"
+               AnchorPane.bottomAnchor="349.0" AnchorPane.topAnchor="98.0"/>
+    <Label layoutX="98.0" layoutY="140.0" text="Cognome">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="cognomeReg" layoutX="194.0" layoutY="137.0" prefHeight="33.0" prefWidth="375.0"/>
+    <Label layoutX="98.0" layoutY="182.0" text="Email">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="emailReg" layoutX="194.0" layoutY="179.0" prefHeight="33.0" prefWidth="375.0"/>
+    <Label layoutX="98.0" layoutY="227.0" text="Telefono">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="telReg" layoutX="194.0" layoutY="224.0" prefHeight="33.0" prefWidth="375.0"/>
+    <Label layoutX="98.0" layoutY="266.0" text="Username">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="userReg" layoutX="194.0" layoutY="263.0" prefHeight="33.0" prefWidth="375.0"/>
+    <Label layoutX="98.0" layoutY="306.0" text="Password">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="passReg" layoutX="194.0" layoutY="303.0" prefHeight="33.0" prefWidth="375.0"/>
+    <Button fx:id="subReg" layoutX="264.0" layoutY="391.0" mnemonicParsing="false" onAction="#register"
+            prefHeight="33.0" prefWidth="80.0" text="Submit"/>
+    <Button fx:id="back" layoutX="377.0" layoutY="391.0" mnemonicParsing="false" onAction="#openLog" prefHeight="33.0"
+            prefWidth="80.0" text="Login"/>
+    <Label fx:id="labelReg" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="344.0" prefHeight="33.0"
+           prefWidth="375.0">
+        <font>
+            <Font name="Arial" size="14.0"/>
+        </font>
+    </Label>
+</AnchorPane>

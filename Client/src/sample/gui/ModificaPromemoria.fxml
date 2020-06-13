@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ControllerModificaPromemoria">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="14.0" prefHeight="65.0"
+               prefWidth="286.0" text="Promemoria" textAlignment="CENTER">
+            <font>
+                <Font size="38.0"/>
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="101.0" text="Nome">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="nomeProm" layoutX="194.0" layoutY="98.0" prefHeight="33.0" prefWidth="375.0"
+                   AnchorPane.bottomAnchor="349.0" AnchorPane.topAnchor="98.0"/>
+        <Label layoutX="81.0" layoutY="151.0" text="Descrizione">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="descrizioneProm" layoutX="194.0" layoutY="148.0" prefHeight="33.0" prefWidth="375.0"/>
+        <Label layoutX="81.0" layoutY="202.0" text="Data">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="dataProm" layoutX="194.0" layoutY="199.0" prefHeight="33.0" prefWidth="375.0"/>
+        <Button fx:id="eliminaProm" layoutX="195.0" layoutY="274.0" mnemonicParsing="false" onAction="#elimina"
+                prefHeight="33.0" prefWidth="111.0" text="Elimina"/>
+        <Button fx:id="ModificaProm" layoutX="326.0" layoutY="274.0" mnemonicParsing="false" onAction="#modifica"
+                prefHeight="33.0" prefWidth="111.0" text="Modifica"/>
+        <Button fx:id="IndietroProm" layoutX="457.0" layoutY="274.0" mnemonicParsing="false" onAction="#indietro"
+                prefHeight="33.0" prefWidth="111.0" text="Indietro"/>
+    </children>
+</AnchorPane>

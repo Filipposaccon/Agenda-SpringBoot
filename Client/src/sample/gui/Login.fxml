@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ControllerLoginRegistrazione">
+    <children>
+        <Button fx:id="login" layoutX="290.0" layoutY="240.0" onAction="#login" prefHeight="25.0" prefWidth="60.0"
+                text="Login"/>
+        <Label fx:id="labelError" layoutX="287.0" layoutY="297.0" minHeight="13.0" minWidth="69" prefHeight="25.0"
+               prefWidth="149.0"/>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="14.0" prefHeight="76.0"
+               prefWidth="206.0" text="Login">
+            <font>
+                <Font name="Arial" size="40.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="user" layoutX="286.0" layoutY="125.0"/>
+        <Label layoutX="321.0" layoutY="98.0" text="Username">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="pass" layoutX="287.0" layoutY="194.0"/>
+        <Label layoutX="322.0" layoutY="167.0" text="Password">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button fx:id="register" layoutX="372.0" layoutY="240.0" onAction="#openReg" prefHeight="25.0" prefWidth="60.0"
+                text="Register"/>
+    </children>
+</AnchorPane>
